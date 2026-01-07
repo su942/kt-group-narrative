@@ -1,27 +1,27 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { Zap, Target, Rocket, Eye } from "lucide-react";
+import { Heart, Flame, Star, Sparkles } from "lucide-react";
 
 const visionItems = [
   {
-    icon: Eye,
-    title: "VISION",
-    description: "To be the definitive leader in immersive digital experiences.",
+    icon: Heart,
+    title: "LOYALTY",
+    description: "We ride together, always. Through thick and thin, the crew stays united.",
   },
   {
-    icon: Target,
-    title: "MISSION",
-    description: "Crafting groundbreaking solutions that transcend expectations.",
+    icon: Flame,
+    title: "PASSION",
+    description: "Everything we do, we do with fire. Half measures aren't in our vocabulary.",
   },
   {
-    icon: Zap,
-    title: "VALUES",
-    description: "Innovation, excellence, and relentless pursuit of perfection.",
+    icon: Star,
+    title: "DREAMS",
+    description: "We dream big and chase harder. The impossible is just a starting point.",
   },
   {
-    icon: Rocket,
-    title: "FUTURE",
-    description: "Building tomorrow's digital infrastructure, today.",
+    icon: Sparkles,
+    title: "MAGIC",
+    description: "When we come together, something extraordinary happens. That's our superpower.",
   },
 ];
 
@@ -56,10 +56,10 @@ const VisionSection = () => {
           className="text-center mb-20"
         >
           <span className="font-display text-sm tracking-[0.3em] text-primary">
-            WHO WE ARE
+            WHAT WE STAND FOR
           </span>
           <h2 className="mt-4 font-display text-4xl md:text-6xl font-bold text-glow">
-            OUR VISION
+            OUR VALUES
           </h2>
         </motion.div>
 
@@ -80,7 +80,7 @@ const VisionCard = ({
   description,
   index,
 }: {
-  icon: typeof Eye;
+  icon: typeof Heart;
   title: string;
   description: string;
   index: number;
