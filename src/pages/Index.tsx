@@ -1,13 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import Preloader from "@/components/Preloader";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import VisionSection from "@/components/VisionSection";
+import ShowcaseSection from "@/components/ShowcaseSection";
+import CinematicBreak from "@/components/CinematicBreak";
+import CTASection from "@/components/CTASection";
+import GrainOverlay from "@/components/GrainOverlay";
 
 const Index = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
+      
+      <main className="relative bg-background overflow-x-hidden">
+        <GrainOverlay />
+        
+        <HeroSection />
+        <AboutSection />
+        <VisionSection />
+        <ShowcaseSection />
+        <CinematicBreak />
+        <CTASection />
+      </main>
+    </>
   );
 };
 
