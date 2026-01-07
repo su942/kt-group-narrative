@@ -14,6 +14,13 @@ const friends = [
     specialty: "Independence",
   },
   {
+    name: "SATTU",
+    role: "The Invincible",
+    quote: "Suggests being too powerful to be overcome or conquered.",
+    image: "/api/placeholder/300/400",
+    specialty: "Indomitability",
+  },
+  {
     name: "AMAN",
     role: "The Strategist",
     quote: "Every move calculated, every plan perfect",
@@ -54,13 +61,6 @@ const friends = [
     quote: "Rules are meant to be rewritten",
     image: "/api/placeholder/300/400",
     specialty: "Innovation",
-  },
-  {
-    name: "SATTU",
-    role: "The Energizer",
-    quote: "Bringing the energy that moves mountains",
-    image: "/api/placeholder/300/400",
-    specialty: "Energy",
   },
   {
     name: "MOJO",
