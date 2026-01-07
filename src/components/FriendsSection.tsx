@@ -8,10 +8,10 @@ import friend4 from "@/assets/friend-4.jpg";
 const friends = [
   {
     name: "SURAJ",
-    role: "The Leader",
-    quote: "Leading the squad to legendary status",
+    role: "The Sigma",
+    quote: "Walking my own path, creating my own rules",
     image: "/api/placeholder/300/400",
-    specialty: "Leadership",
+    specialty: "Independence",
   },
   {
     name: "AMAN",
