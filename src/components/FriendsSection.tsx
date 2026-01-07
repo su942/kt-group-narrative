@@ -64,7 +64,7 @@ const friends = [
   },
   {
     name: "MOJO",
-    role: "The Magician",
+    role: "The black magic",
     quote: "Making the impossible look easy",
     image: "/api/placeholder/300/400",
     specialty: "Magic",
