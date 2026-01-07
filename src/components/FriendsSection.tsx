@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import friend1 from "@/assets/friend-1.jpg";
 import friend2 from "@/assets/friend-2.jpg";
 import friend3 from "@/assets/friend-3.jpg";
@@ -7,28 +7,123 @@ import friend4 from "@/assets/friend-4.jpg";
 
 const friends = [
   {
-    name: "ALEX",
-    role: "The Visionary",
-    quote: "Dreams are just plans waiting to happen",
-    image: friend1,
+    name: "SURAJ",
+    role: "The Leader",
+    quote: "Leading the squad to legendary status",
+    image: "/api/placeholder/300/400",
+    specialty: "Leadership",
   },
   {
-    name: "MAYA",
-    role: "The Creator",
-    quote: "Art is the soul made visible",
-    image: friend2,
-  },
-  {
-    name: "CHRIS",
+    name: "AMAN",
     role: "The Strategist",
-    quote: "Every problem has a elegant solution",
-    image: friend3,
+    quote: "Every move calculated, every plan perfect",
+    image: "/api/placeholder/300/400",
+    specialty: "Strategy",
   },
   {
-    name: "ZANE",
-    role: "The Rebel",
-    quote: "Rules are just suggestions",
-    image: friend4,
+    name: "HEMANT",
+    role: "The Innovator",
+    quote: "Breaking boundaries with every idea",
+    image: "/api/placeholder/300/400",
+    specialty: "Innovation",
+  },
+  {
+    name: "PIYUSH",
+    role: "The Creator",
+    quote: "Turning visions into reality",
+    image: "/api/placeholder/300/400",
+    specialty: "Creation",
+  },
+  {
+    name: "PAVAN",
+    role: "The Catalyst",
+    quote: "Sparking change wherever I go",
+    image: "/api/placeholder/300/400",
+    specialty: "Motivation",
+  },
+  {
+    name: "PRATHAMESH",
+    role: "The Architect",
+    quote: "Building the future, one step at a time",
+    image: "/api/placeholder/300/400",
+    specialty: "Architecture",
+  },
+  {
+    name: "YASH",
+    role: "The Maverick",
+    quote: "Rules are meant to be rewritten",
+    image: "/api/placeholder/300/400",
+    specialty: "Innovation",
+  },
+  {
+    name: "SATTU",
+    role: "The Energizer",
+    quote: "Bringing the energy that moves mountains",
+    image: "/api/placeholder/300/400",
+    specialty: "Energy",
+  },
+  {
+    name: "MOJO",
+    role: "The Magician",
+    quote: "Making the impossible look easy",
+    image: "/api/placeholder/300/400",
+    specialty: "Magic",
+  },
+  {
+    name: "MITHESH",
+    role: "The Analyst",
+    quote: "Data tells stories, I listen",
+    image: "/api/placeholder/300/400",
+    specialty: "Analysis",
+  },
+  {
+    name: "SUYOG",
+    role: "The Connector",
+    quote: "Bridging ideas and making them happen",
+    image: "/api/placeholder/300/400",
+    specialty: "Connection",
+  },
+  {
+    name: "KARN",
+    role: "The Warrior",
+    quote: "Fighting for what we believe in",
+    image: "/api/placeholder/300/400",
+    specialty: "Determination",
+  },
+  {
+    name: "SANKET",
+    role: "The Optimizer",
+    quote: "Making everything better, faster, stronger",
+    image: "/api/placeholder/300/400",
+    specialty: "Optimization",
+  },
+  {
+    name: "ROSHAN",
+    role: "The Illuminator",
+    quote: "Bringing light to every challenge",
+    image: "/api/placeholder/300/400",
+    specialty: "Clarity",
+  },
+  {
+    name: "SIDH",
+    role: "The Perfectionist",
+    quote: "Excellence is not a skill, it's an attitude",
+    image: "/api/placeholder/300/400",
+    specialty: "Perfection",
+  },
+  {
+    name: "RAJVEER",
+    role: "The Champion",
+    quote: "Victory is not just a goal, it's a way of life",
+    image: "/api/placeholder/300/400",
+    specialty: "Victory",
+  },
+  {
+    name: "ATHRVA",
+    role: "The Visionary",
+    quote: "Seeing tomorrow's possibilities today",
+    image: "/api/placeholder/300/400",
+    specialty: "Vision",
   },
 ];
 
@@ -56,17 +151,43 @@ const FriendsSection = () => {
           <h2 className="mt-4 font-display text-4xl md:text-6xl font-bold text-glow">
             OUR SQUAD
           </h2>
-          <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
-            The legendary crew that makes the impossible happen
+          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto text-lg">
+            17 legends united by friendship, driven by dreams, and bound by an unbreakable bond. Meet the squad that's redefining what's possible.
           </p>
         </motion.div>
 
-        {/* Friends Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        {/* Friends Grid - Responsive */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-6 max-w-7xl mx-auto">
           {friends.map((friend, index) => (
             <FriendCard key={index} {...friend} index={index} />
           ))}
         </div>
+
+        {/* Squad Stats - Mobile Responsive */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="mt-16 sm:mt-20 text-center"
+        >
+          <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-8 px-6 sm:px-8 py-4 bg-card/20 backdrop-blur-sm rounded-full border border-primary/20">
+            <div className="text-center">
+              <div className="font-display text-2xl sm:text-3xl font-bold text-primary">{friends.length}</div>
+              <div className="text-xs text-muted-foreground tracking-wide">LEGENDS</div>
+            </div>
+            <div className="w-8 h-[1px] sm:w-[1px] sm:h-12 bg-primary/30" />
+            <div className="text-center">
+              <div className="font-display text-2xl sm:text-3xl font-bold text-primary">∞</div>
+              <div className="text-xs text-muted-foreground tracking-wide">POSSIBILITIES</div>
+            </div>
+            <div className="w-8 h-[1px] sm:w-[1px] sm:h-12 bg-primary/30" />
+            <div className="text-center">
+              <div className="font-display text-2xl sm:text-3xl font-bold text-primary">1</div>
+              <div className="text-xs text-muted-foreground tracking-wide">UNSTOPPABLE CREW</div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
@@ -77,34 +198,49 @@ const FriendCard = ({
   role,
   quote,
   image,
+  specialty,
   index,
 }: {
   name: string;
   role: string;
   quote: string;
   image: string;
+  specialty: string;
   index: number;
 }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 50, rotateY: -15 }}
       whileInView={{ opacity: 1, y: 0, rotateY: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.6, delay: index * 0.15 }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+      onMouseEnter={() => !isMobile && setIsHovered(true)}
+      onMouseLeave={() => !isMobile && setIsHovered(false)}
+      onTouchStart={() => isMobile && setIsHovered(true)}
+      onTouchEnd={() => isMobile && setTimeout(() => setIsHovered(false), 2000)}
       className="group relative perspective-1000"
     >
       <motion.div
         animate={{
-          rotateY: isHovered ? 5 : 0,
-          rotateX: isHovered ? -5 : 0,
-          scale: isHovered ? 1.05 : 1,
+          rotateY: isHovered && !isMobile ? 5 : 0,
+          rotateX: isHovered && !isMobile ? -5 : 0,
+          scale: isHovered ? (isMobile ? 1.02 : 1.05) : 1,
         }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
-        className="relative aspect-[3/4] overflow-hidden bg-card border border-border group-hover:border-primary/50 transition-colors duration-500"
+        className="relative aspect-[3/4] overflow-hidden bg-card border border-border group-hover:border-primary/50 transition-colors duration-500 rounded-lg"
       >
         {/* Image */}
         <motion.img
@@ -144,10 +280,10 @@ const FriendCard = ({
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
 
         {/* Content */}
-        <div className="absolute bottom-0 left-0 right-0 p-6">
+        <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
           {/* Name with glitch effect */}
           <motion.h3
-            className="font-display text-2xl font-black tracking-wider"
+            className="font-display text-lg sm:text-xl md:text-2xl font-black tracking-wider"
             animate={{
               textShadow: isHovered
                 ? [
@@ -165,8 +301,12 @@ const FriendCard = ({
           <p className="mt-1 font-display text-xs tracking-widest text-primary">
             {role}
           </p>
+          
+          <div className="mt-2 px-2 py-1 bg-primary/10 rounded text-xs font-display tracking-wide text-primary/80 inline-block">
+            {specialty}
+          </div>
 
-          {/* Quote - appears on hover */}
+          {/* Quote - appears on hover/touch */}
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{
@@ -174,7 +314,7 @@ const FriendCard = ({
               y: isHovered ? 0 : 10,
             }}
             transition={{ duration: 0.3 }}
-            className="mt-3 text-sm text-muted-foreground italic"
+            className="mt-3 text-xs sm:text-sm text-muted-foreground italic"
           >
             "{quote}"
           </motion.p>
@@ -193,13 +333,13 @@ const FriendCard = ({
           className="absolute top-4 right-4"
           animate={{ opacity: isHovered ? 1 : 0.3 }}
         >
-          <div className="w-8 h-[1px] bg-primary" />
-          <div className="w-4 h-[1px] bg-primary mt-1" />
+          <div className="w-6 sm:w-8 h-[1px] bg-primary" />
+          <div className="w-3 sm:w-4 h-[1px] bg-primary mt-1" />
         </motion.div>
 
         {/* Neon border glow on hover */}
         <motion.div
-          className="absolute inset-0 pointer-events-none"
+          className="absolute inset-0 pointer-events-none rounded-lg"
           animate={{
             boxShadow: isHovered
               ? "inset 0 0 30px hsl(var(--primary) / 0.3), 0 0 30px hsl(var(--primary) / 0.2)"
@@ -211,7 +351,7 @@ const FriendCard = ({
 
       {/* Floating elements */}
       <motion.div
-        className="absolute -bottom-2 -right-2 w-16 h-16 border border-primary/20"
+        className="absolute -bottom-2 -right-2 w-12 sm:w-16 h-12 sm:h-16 border border-primary/20"
         animate={{
           opacity: isHovered ? 0.5 : 0,
           scale: isHovered ? 1 : 0.8,
