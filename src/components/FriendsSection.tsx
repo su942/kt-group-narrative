@@ -18,7 +18,7 @@ const friends = [
   },
   {
     name: "AMAN",
-    role: "The Strategist",
+    role: "The Stratt",
     quote: "Every move calculated, every plan perfect",
     image: "/src/assets/aman.jpg",
     specialty: "Strategy",
