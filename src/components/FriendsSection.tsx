@@ -10,7 +10,7 @@ const friends = [
     name: "SURAJ",
     role: "The Sigma",
     quote: "Walking my own path, creating my own rules",
-    image: "/api/placeholder/300/400",
+    image: "/friend1.jpg",
     specialty: "Independence",
   },
   {
