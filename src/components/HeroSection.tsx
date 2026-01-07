@@ -80,7 +80,7 @@ const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            WELCOME TO THE FUTURE
+            WELCOME TO THE SQUAD
           </motion.p>
 
           <h1 className="relative">
@@ -98,7 +98,7 @@ const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            We Create. We Innovate. We Dominate.
+            Friends. Legends. Unstoppable.
           </motion.p>
         </motion.div>
 
@@ -110,10 +110,10 @@ const HeroSection = () => {
           transition={{ delay: 1.2 }}
         >
           <button className="px-8 py-4 font-display text-sm tracking-widest bg-primary text-primary-foreground neon-border animate-pulse-glow transition-all hover:scale-105">
-            EXPLORE OUR WORLD
+            MEET THE CREW
           </button>
           <button className="px-8 py-4 font-display text-sm tracking-widest border border-primary/50 text-foreground hover:bg-primary/10 transition-all hover:border-primary">
-            LEARN MORE
+            OUR STORY
           </button>
         </motion.div>
       </motion.div>

@@ -2,8 +2,8 @@ import { useState } from "react";
 import Preloader from "@/components/Preloader";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
+import FriendsSection from "@/components/FriendsSection";
 import VisionSection from "@/components/VisionSection";
-import ShowcaseSection from "@/components/ShowcaseSection";
 import CinematicBreak from "@/components/CinematicBreak";
 import CTASection from "@/components/CTASection";
 import GrainOverlay from "@/components/GrainOverlay";
@@ -20,8 +20,8 @@ const Index = () => {
         
         <HeroSection />
         <AboutSection />
+        <FriendsSection />
         <VisionSection />
-        <ShowcaseSection />
         <CinematicBreak />
         <CTASection />
       </main>

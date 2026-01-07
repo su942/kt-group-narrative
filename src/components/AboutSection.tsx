@@ -4,15 +4,15 @@ import { useRef } from "react";
 const storyContent = [
   {
     title: "THE BEGINNING",
-    text: "Born from a vision to revolutionize digital experiences, KT GROUP emerged as a force of innovation.",
+    text: "It all started with a group of friends who shared one wild dream — to create something legendary together.",
   },
   {
-    title: "THE EVOLUTION",
-    text: "We pushed boundaries, challenged norms, and redefined what's possible in the digital realm.",
+    title: "THE JOURNEY",
+    text: "Through late nights, crazy ideas, and countless adventures, we grew stronger as a crew. Every challenge only made us tighter.",
   },
   {
-    title: "THE DOMINANCE",
-    text: "Today, we stand at the forefront of creative technology, shaping tomorrow's digital landscape.",
+    title: "THE LEGEND",
+    text: "Now we stand united — a squad that turns impossible dreams into reality. This is just the beginning of our story.",
   },
 ];
 

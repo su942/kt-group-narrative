@@ -59,7 +59,7 @@ const CTASection = () => {
           transition={{ duration: 0.8 }}
         >
           <span className="font-display text-sm tracking-[0.3em] text-primary">
-            THE NEXT CHAPTER
+            THIS IS JUST THE BEGINNING
           </span>
 
           <h2 className="mt-6 font-display text-5xl md:text-7xl lg:text-8xl font-black tracking-wider">
@@ -67,12 +67,11 @@ const CTASection = () => {
               JOIN
             </span>
             <br />
-            <span className="text-foreground/50">KT GROUP</span>
+            <span className="text-foreground/50">THE SQUAD</span>
           </h2>
 
           <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Be part of the revolution. Together, we'll create experiences that
-            define the future of digital innovation.
+            Be part of something legendary. Together, we'll create memories that last forever and adventures that define us.
           </p>
 
           <motion.div
@@ -87,7 +86,7 @@ const CTASection = () => {
               whileTap={{ scale: 0.95 }}
               className="group relative px-12 py-5 font-display text-sm tracking-widest bg-primary text-primary-foreground overflow-hidden"
             >
-              <span className="relative z-10">GET STARTED</span>
+              <span className="relative z-10">LET'S GO</span>
               <motion.div
                 className="absolute inset-0 bg-glow-intense"
                 initial={{ x: "-100%" }}
@@ -102,7 +101,7 @@ const CTASection = () => {
               whileTap={{ scale: 0.95 }}
               className="px-12 py-5 font-display text-sm tracking-widest border border-primary/50 text-foreground hover:bg-primary/10 hover:border-primary transition-all duration-300"
             >
-              CONTACT US
+              SAY HI
             </motion.button>
           </motion.div>
         </motion.div>
@@ -116,7 +115,7 @@ const CTASection = () => {
           transition={{ delay: 0.6 }}
         >
           <div className="flex justify-center gap-8 mb-8">
-            {["TWITTER", "LINKEDIN", "INSTAGRAM"].map((social, index) => (
+            {["INSTAGRAM", "TIKTOK", "DISCORD"].map((social) => (
               <motion.a
                 key={social}
                 href="#"
@@ -131,7 +130,7 @@ const CTASection = () => {
           <div className="h-[1px] w-32 mx-auto bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
 
           <p className="mt-8 font-display text-xs tracking-widest text-muted-foreground">
-            © 2024 KT GROUP. ALL RIGHTS RESERVED.
+            © 2024 KT GROUP. LEGENDS NEVER DIE.
           </p>
         </motion.div>
       </div>
