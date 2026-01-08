@@ -8,6 +8,7 @@ import AboutSection from "@/components/AboutSection";
 import FriendsSection from "@/components/FriendsSection";
 import VisionSection from "@/components/VisionSection";
 import MemoriesSection from "@/components/MemoriesSection";
+import MovingMarquee from "@/components/MovingMarquee";
 import MemoriesGallery from "@/components/MemoriesGallery";
 import CinematicBreak from "@/components/CinematicBreak";
 import CTASection from "@/components/CTASection";
@@ -31,6 +32,7 @@ const Index = () => {
         <FriendsSection />
         <VisionSection />
         <MemoriesSection />
+        <MovingMarquee />
         <MemoriesGallery />
         <CinematicBreak />
         <CTASection />
