@@ -3,6 +3,7 @@ import { useRef, useEffect, useState } from "react";
 import { ChevronDown, Zap, Star } from "lucide-react";
 import QuantumMatrix from "./QuantumMatrix";
 import HolographicText from "./HolographicText";
+import FluidSmokeBackground from "./FluidSmokeBackground";
 
 const HeroSection = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -54,6 +55,13 @@ const HeroSection = () => {
     >
       {/* Quantum Matrix Background - Reduced on mobile */}
       {!isMobile && <QuantumMatrix />}
+      
+      {/* Fluid Smoke Background */}
+      <FluidSmokeBackground 
+        intensity="medium" 
+        colors="neon" 
+        interactive={!isMobile} 
+      />
 
       {/* Background layers */}
       <motion.div
