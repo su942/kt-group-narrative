@@ -17,13 +17,13 @@ const friends = [
     specialty: "Indomitability",
   },
   {
-    name: "AMAN",
-    role: "The Stratt",
-    quote: "Every move calculated, every plan perfect",
-    image: "/src/assets/aman.jpg",
-    specialty: "Strategy",
+    name: "PIYUSH",
+    role: "The Creator",
+    quote: "Turning visions into reality",
+    image: "/src/assets/piyush.jpg",
+    specialty: "Creation",
   },
-  {
+   {
     name: "HEMANT",
     role: "The Innovator",
     quote: "Breaking boundaries with every idea",
@@ -31,11 +31,11 @@ const friends = [
     specialty: "Innovation",
   },
   {
-    name: "PIYUSH",
-    role: "The Creator",
-    quote: "Turning visions into reality",
-    image: "/src/assets/piyush.jpg",
-    specialty: "Creation",
+    name: "AMAN",
+    role: "The Stratt",
+    quote: "Every move calculated, every plan perfect",
+    image: "/src/assets/aman.jpg",
+    specialty: "Strategy",
   },
   {
     name: "PAVAN",
@@ -66,7 +66,7 @@ const friends = [
     specialty: "Magic",
   },
   {
-    name: "MITHESH",
+    name: "MITESH",
     role: "The Analyst",
     quote: "Data tells stories, I listen",
     image: "/src/assets/mithesh.jpg",
